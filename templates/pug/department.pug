@@ -1,8 +1,10 @@
 extend components/template.pug
 block css 
+	link(rel="stylesheet", href="../static/css/result.css")
 
 block title
 	title elart | department
 block contents
-
+	main.department
+		include components/sidebar.pug
 block scripts	

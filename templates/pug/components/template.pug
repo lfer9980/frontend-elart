@@ -1,11 +1,8 @@
-include configuration.pug
+//-include configuration.pug
 doctype html
 html(lang="es")
 	include main/head.pug
 	body 
-		i.material-icons.button-theme dark_mode
-		include main/header.pug	
 		block contents
 		block footer
-		script(async src="../static/js/burgerButton.js") 
 		block scripts
