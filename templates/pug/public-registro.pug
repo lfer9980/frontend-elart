@@ -3,12 +3,18 @@ block css
 block title
     title elart | Registro de administrador
 block contents
-    <form action="" method="post">
-    <label class="label__ela" for="uname"><b>Agregar administrador: </b></label>
-    <label class="label__ela" for="uname"><b>Nombre </b></label>
-    <input class="input__ela" type="text" placeholder="" name="nombre" required>
-    <label class="label__ela" for="uname"><b>Correo </b></label>
-    <input class="input__ela" type="text" placeholder="Correo" name="email" required>
-    <label class="label__ela" for="uname"><b>Contraseña: </b></label>
-    <input class="input__ela" type="text" placeholder="Contraseña" name="password" required>
-    <button class="buton_ela" type="submit">Guardar</button>
+    main.registro
+        img(src="", alt="Logo de elart") 
+        h4 Agregar administrador
+        form.login__form(action="" method="POST") 
+            label.form__label(for="nombre")
+                span Nombre:
+                input.form__input(type="text" placeholder="ingrese su nombre" name="nombre" required)
+            label.form__label(for="correo")
+                span Correo electronico:
+                input.form__input(type="text" placeholder="" name="correo" required)
+            label.form__label(for="contraseña")
+                span Contraseña:
+                input.form__input(type="text" placeholder="" name="password" required)
+            button.button--brown(type="submit") Guardar
+        img(src="", alt="Logo de Alfonso Marina")
