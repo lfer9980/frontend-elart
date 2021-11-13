@@ -5,23 +5,21 @@ block title
 block contents
 	include components/sidebar-admin.pug
 	main.form
-	.form__agregar
-		form(action="" method="POST")
-			label(class="form__label")
-				span Agregar Departamento:
-			label(class="form__label" for="departamento")
-				span Nombre:
-				input.form__input(type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required)
-			button.button__brown(type="submit") Crear departamento
-	.form__editar
-		form(action="" method="POST")
-			label(class="form__label")
-				span Editar departamento:
-			label(class="form__label" for="departamento")
-				span Nombre:
-				input.form__input(list ="departamentos")
-				datalist(id="departamentos")
-					option(value="valor dummie")
-			button.button__brown(type="submit") Crear departamento
+		.form__agregar
+			h2 Agregar Departamento:
+			form(action="" method="POST")
+				label(class="form__label" for="departamento")
+					span Nombre:
+					input.form__input(type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required)
+				button.button__brown(type="submit") Crear departamento
+		.form__editar
+				h2 Editar departamento:
+				form(action="" method="POST")
+				label(class="form__label" for="departamento")
+					span Nombre:
+					input.form__input(list ="departamentos" name = "departamento")
+					datalist(id="departamentos")
+						option(value="valor dummie")
+				button.button__brown(type="submit") Crear departamento
 
 block scripts

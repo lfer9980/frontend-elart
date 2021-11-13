@@ -15,7 +15,7 @@
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
     <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>elart | administrar departamentos</title>
+    <title>elart | Agregar un usuario</title>
   </head>
   <body> 
     <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
@@ -31,25 +31,23 @@
       <div class="button--brown"> <a href="">Cerrar sesión</a></div>
     </aside>
     <main class="form">
-      <div class="form__agregar">
-        <h2>Agregar Departamento:</h2>
+      <h2 class="form__title"></h2>
+      <div class="form__perfil">
         <form action="" method="POST">
-          <label class="form__label" for="departamento"><span>Nombre:</span>
-            <input class="form__input" type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required>
+          <label class="form__label" for="nombre"><span>Nombre:</span>
+            <input class="form__input" type="text" placeholder="Escriba tu nombre" name="nombre" required>
           </label>
-          <button class="button__brown" type="submit">Crear departamento</button>
+          <label class="form__label" for="correo"><span>Correo Electronico:</span>
+            <input class="form__input" type="text" placeholder="Escriba su correo" name="correo" required>
+          </label>
+          <label class="form__label" for="departamento"><span>Seleccione Departamento:</span>
+            <input class="form__input" list="departamentos" name="departamento">
+            <datalist id="departamentos">
+              <option value="valor dummie"></option>
+            </datalist>
+          </label>
+          <button class="button__brown" type="submit">Enviar información</button>
         </form>
-      </div>
-      <div class="form__editar">
-        <h2>Editar departamento:</h2>
-        <form action="" method="POST"></form>
-        <label class="form__label" for="departamento"><span>Nombre:</span>
-          <input class="form__input" list="departamentos" name="departamento">
-          <datalist id="departamentos">
-            <option value="valor dummie"></option>
-          </datalist>
-        </label>
-        <button class="button__brown" type="submit">Crear departamento</button>
       </div>
     </main>
   </body>
