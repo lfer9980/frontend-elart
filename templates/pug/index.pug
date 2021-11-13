@@ -4,5 +4,16 @@ block css
 block title
 	title elart | iniciar Sesión
 block contents
-	
+	main.login 
+		img(src="", alt="Logo de elart")
+		.login__info 
+			p Te damos la bienvenida a #[span e-lart.]
+			p El lugar donde evaluamos tu desempeño de forma efectiva.
+		form.login__form(action="" method="POST") 
+			label.form__label(for="usuario")
+				input.form__input(type="text" placeholder="Usuario" name="usuario" required)
+			label.form__label(for="contraseña")
+				input.form__input(type="text" placeholder="Contraseña" name="contraseña" required)
+			button.button--brown(type="submit") Ingresar
+		img(src="", alt="Logo de Alfonso Marina")
 block scripts	
