@@ -15,6 +15,9 @@
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
     <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/admin-departamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>elart | administrar departamentos</title>
   </head>
   <body> 
@@ -42,14 +45,15 @@
       </div>
       <div class="form__editar">
         <h2>Editar departamento:</h2>
-        <form action="" method="POST"></form>
-        <label class="form__label" for="departamento"><span>Nombre del departamento:</span>
-          <input class="form__input" list="departamentos" name="departamento">
-          <datalist id="departamentos">
-            <option value="valor dummie"></option>
-          </datalist>
-        </label>
-        <button class="button--brown" type="submit">Crear departamento</button>
+        <form action="" method="POST">
+          <label class="form__label" for="departamento"><span>Nombre del departamento:</span>
+            <input class="form__input" list="departamentos" name="departamento">
+            <datalist id="departamentos">
+              <option value="valor dummie"></option>
+            </datalist>
+          </label>
+          <button class="button--brown" type="submit">Crear departamento</button>
+        </form>
       </div>
     </main>
   </body>

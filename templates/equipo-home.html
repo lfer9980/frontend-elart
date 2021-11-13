@@ -15,6 +15,10 @@
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
     <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/equipo-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js" integrity="sha512-CWVDkca3f3uAWgDNVzW+W4XJbiC3CH84P2aWZXj+DqI6PNbTzXbl1dIzEHeNJpYSn4B6U8miSZb/hCws7FnUZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>elart | home </title>
   </head>
   <body> 
@@ -83,7 +87,10 @@
           <div class="button--brown--info"><a href="">Más información </a></div>
         </section>
         <section class="graphic"> 
-          <div class="graphic__main"></div>
+          <div class="graphic__main">
+            <canvas id="plot"> </canvas>
+            <canvas id="doughnut"></canvas>
+          </div>
         </section>
       </div>
     </main>
