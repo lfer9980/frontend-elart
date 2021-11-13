@@ -4,15 +4,15 @@ block css
 block title
 	title elart | home 
 block contents
-	include components/sidebar.pug
+	include components/sidebar-admin.pug
 	main.home
-		h1.home__tile OverView - l’partenaire
+		h1.home__tile OverView - l’chef
 		.home__section
-			include components/profile-main.pug
+			include components/profile-admin.pug
 		.home__section
-			include components/profile-points.pug
+			include components/estrellas.pug
+			include components/graphics.pug
 		.home__section
 			include components/evaluations-department.pug
-			include components/graphics.pug
 
 block scripts	
