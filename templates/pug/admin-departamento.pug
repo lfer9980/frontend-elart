@@ -11,7 +11,7 @@ block contents
 				label(class="form__label" for="departamento")
 					span Nombre:
 					input.form__input(type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required)
-				button.button__brown(type="submit") Crear departamento
+				button.button--brown(type="submit") Crear departamento
 		.form__editar
 				h2 Editar departamento:
 				form(action="" method="POST")
@@ -20,6 +20,6 @@ block contents
 					input.form__input(list ="departamentos" name = "departamento")
 					datalist(id="departamentos")
 						option(value="valor dummie")
-				button.button__brown(type="submit") Crear departamento
+				button.button--brown(type="submit") Crear departamento
 
 block scripts

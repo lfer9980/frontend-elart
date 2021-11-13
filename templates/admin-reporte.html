@@ -15,7 +15,7 @@
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
     <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>elart | Agregar un usuario</title>
+    <title>elart | generar reporte</title>
   </head>
   <body> 
     <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
@@ -30,25 +30,40 @@
       </nav>
       <div class="button--brown"> <a href="">Cerrar sesión</a></div>
     </aside>
-    <main class="form">
-      <h2 class="form__title">Editar perfil</h2>
-      <div class="form__perfil">
-        <form action="" method="POST">
-          <label class="form__label" for="nombre"><span>Nombre:</span>
-            <input class="form__input" type="text" placeholder="Escriba tu nombre" name="nombre" required>
-          </label>
-          <label class="form__label" for="correo"><span>Correo Electronico:</span>
-            <input class="form__input" type="text" placeholder="Escriba su correo" name="correo" required>
-          </label>
-          <label class="form__label" for="departamento"><span>Seleccione Departamento:</span>
-            <input class="form__input" list="departamentos" name="departamento">
-            <datalist id="departamentos">
-              <option value="valor dummie"></option>
-            </datalist>
-          </label>
-          <button class="button--brown" type="submit">Enviar información</button>
-        </form>
+    <main class="reportes">
+      <h2 class="reportes__title">Imprimir Reporte:</h2>
+      <div class="form__reporte">
+        <form action="" method="POST"></form>
+        <label class="form__label" for="uname"><span>Seleccione el departamento:</span>
+          <input class="form__input" list="departamentos" name="Departamento">
+          <datalist id="departamentos">
+            <option value="valor dummie"></option>
+          </datalist>
+        </label>
+        <button class="button--brown" type="submit">Generar reportes</button>
       </div>
+      <section class="reportes__resultados">
+        <article class="reporte__resultados__card"> 
+          <div class="profile-main__foto"><img src="" alt=""></div>
+          <div class="profile-main__data">
+            <h3>Joaquin Hernández </h3><span>Compras e insumos</span>
+            <div class="profile-main__data__estrellas"><i class="material-icons">stars</i>
+              <p><span>4</span><span>estrellas </span></p>
+            </div>
+          </div>
+          <div class="profile-main__grafico"> </div>
+        </article>
+        <article class="reporte__resultados__card"> 
+          <div class="profile-main__foto"><img src="" alt=""></div>
+          <div class="profile-main__data">
+            <h3>Joaquin Hernández </h3><span>Compras e insumos</span>
+            <div class="profile-main__data__estrellas"><i class="material-icons">stars</i>
+              <p><span>4</span><span>estrellas </span></p>
+            </div>
+          </div>
+          <div class="profile-main__grafico"> </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>

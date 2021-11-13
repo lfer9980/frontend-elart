@@ -3,22 +3,40 @@ block css
 block title
 	title elart | generar reporte
 block contents
-	<form action="" method="post">
-	<label class="label__ela" for="uname"><b>Imprimir Reporte: </b></label>
-	<label class="label__ela" for="uname"><b>Seleccione Departamento: </b></label>
-	<select class="select__ela" name="Departamento">
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		<option>4</option>
-		<option>5</option>
-	</select>
-	<label class="label__ela" for="uname"><b>Seleccione Empleado: </b></label>
-	<select class="select__ela" name="Empleado">
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		<option>4</option>
-		<option>5</option>
-	</select>
-	<button class="buton__ela" type="submit">Guardar</button>
+	include components/sidebar-admin.pug
+	main.reportes
+		h2.reportes__title Imprimir Reporte:
+		.form__reporte
+			form(action="" method="POST")
+			label.form__label(for="uname")
+				span Seleccione el departamento:
+				input.form__input(list="departamentos" name="Departamento")
+				datalist(id="departamentos")
+					option(value="valor dummie")
+			button.button--brown(type="submit") Generar reportes
+		section.reportes__resultados
+			article.reporte__resultados__card 
+				.profile-main__foto
+					img(src="", alt="")
+				.profile-main__data
+					h3 Joaquin Hernández 
+					span Compras e insumos
+					.profile-main__data__estrellas
+						i.material-icons stars
+						p
+							span 4
+							span estrellas 
+				.profile-main__grafico 
+			article.reporte__resultados__card 
+				.profile-main__foto
+					img(src="", alt="")
+				.profile-main__data
+					h3 Joaquin Hernández 
+					span Compras e insumos
+					.profile-main__data__estrellas
+						i.material-icons stars
+						p
+							span 4
+							span estrellas 
+				.profile-main__grafico 
+					

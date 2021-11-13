@@ -3,13 +3,15 @@ aside.sidebar
 	p.sidebar__username Hola! Joaquín 
 	nav.sidebar__nav 
 		ul.sidebar__nav__data
-			i.material-icons account_box 
-			p Modificar perfil
-		ul.sidebar__nav__data
-			i.material-icons device_hub
-			p Su departamento 
-		ul.sidebar__nav__data
-			i.material-icons assignment_turned_in
-			p Sus evaluaciones 
+			li.sidebar__item
+				a(href="") #[i.material-icons accessibility] Vista General 
+			li.sidebar__item 
+				a(href="") #[i.material-icons account_box] Modificar perfil
+			li.sidebar__item
+				a(href="") #[i.material-icons device_hub] Su departamento 
+			li.sidebar__item
+				a(href="") #[link i.material-icons assignment_turned_in] Sus evaluaciones
+			li.sidebar__item 
+				a(href="") #[i.material-icons settings] Editar su perfil
 	.button--brown 
 		a(href="") Cerrar sesión
