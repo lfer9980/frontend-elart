@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Jesus Alan Hernandez Galvan (Unlikeghost)">
+    <meta name="autor" content="Luis Fernández (lfer9980)">
+    <meta name="autor" content="Leonel Valdez (leo1345)">
+    <meta name="description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
+    <meta property="og:title" content="Elart: evaluando el arte by Alfonso Marina">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="https://i.postimg.cc/dV37vjLh/logo-1-2x.png">
+    <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
+    <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>elart | administrar departamentos</title>
+  </head>
+  <body> 
+    <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
+      <p class="sidebar__username">Hola! Joaquín </p>
+      <nav class="sidebar__nav"> 
+        <ul class="sidebar__nav__data">
+          <li class="sidebar__item"><a href=""><i class="material-icons">account_box</i> Modificar perfil </a></li>
+          <li class="sidebar__item"><a href=""><i class="material-icons">device_hub</i> Reportes</a></li>
+          <li class="sidebar__nav__data"> <a href=""><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
+          <li class="sidebar__item"> <a href=""><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
+        </ul>
+      </nav>
+      <div class="button--brown"> <a href="">Cerrar sesión</a></div>
+    </aside>
+    <main class="form"></main>
+    <div class="form__agregar">
+      <form action="" method="POST">
+        <label class="form__label"><span>Agregar Departamento:</span></label>
+        <label class="form__label" for="departamento"><span>Nombre:</span>
+          <input class="form__input" type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required>
+        </label>
+        <button class="button__brown" type="submit">Crear departamento</button>
+      </form>
+    </div>
+    <div class="form__editar">
+      <form action="" method="POST">
+        <label class="form__label"><span>Editar departamento:</span></label>
+        <label class="form__label" for="departamento"><span>Nombre:</span>
+          <input class="form__input" list="departamentos">
+          <datalist id="departamentos">
+            <option value="valor dummie"></option>
+          </datalist>
+        </label>
+        <button class="button__brown" type="submit">Crear departamento</button>
+      </form>
+    </div>
+  </body>
+</html>
