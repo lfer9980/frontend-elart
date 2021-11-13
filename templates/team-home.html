@@ -15,7 +15,7 @@
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
     <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>elart | partenaire</title>
+    <title>elart | home </title>
   </head>
   <body> 
     <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
@@ -31,21 +31,49 @@
       </nav>
       <div class="button--brown"> <a href="">Cerrar sesión</a></div>
     </aside>
-    <main class="user"> 
-      <h1 class="user_title">Perfil de usuario</h1>
-      <div class="user__section"> 
-        <section class="profile-user"> 
-          <div class="profile-user__left"> <img class="profile__image" src="" alt="fotografia de usuario">
-            <div class="button--brown"><a href="">Modificar perfil</a></div>
+    <main class="home">
+      <h1 class="home__tile">OverView - l’partenaire</h1>
+      <div class="home__section">
+        <section class="profile-main">
+          <div class="profile-main__foto">
+            <picture> <img src="" alt="">
+              <figcaption>Joaquin Hernández </figcaption>
+              <figcaption>Compras e insumos</figcaption>
+            </picture>
           </div>
-          <div class="profile-user__right"> 
-            <h3 class="profile-user__name">Joaquin Hernández</h3>
-            <p class="profile-user__description">Compras e insumos</p>
-            <p class="profile-user__estrellas"><span>4</span> estrellas</p>
-            <div class="profile-user__stars"> <i class="material-icons">stars </i><i class="material-icons">stars </i><i class="material-icons">stars </i><i class="material-icons">stars </i></div>
+          <div class="profile-main__nivel"> 
+            <div class="profile-main__nivel"><i class="material-icons">check_circle_outline</i>
+              <p>rango</p>
+              <p><span>artiste</span></p>
+            </div>
+            <div class="profile-main__estrella"><i class="material-icons">stars</i>
+              <p><span>4</span><span>estrellas</span></p>
+            </div>
           </div>
         </section>
-        <h1 class="user__subtitle">Sus ultimas Evaluaciones:</h1>
+      </div>
+      <div class="home__section">
+        <section class="profile-points"> 
+          <div class="profile-points__header"> 
+            <div class="profile-point__header__left">
+              <h4 class="profile-points__title">	</h4>
+              <div class="profile__header__points"> <i class="material-icons">accessibility </i><span>2345</span></div>
+            </div>
+            <div class="profile-point__header__left"> <span>Graficos </span></div>
+          </div>
+          <div class="profile-points__main"> 
+            <h4>Sus ultimas Evaluaciones: </h4>
+            <article class="evaluations"><i class="material-icons evaluation__icon">thumb_up </i>
+              <p class="evaluation__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <article class="evaluations"><i class="material-icons evaluation__icon">thumb_up </i>
+              <p class="evaluation__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+          </div>
+          <div class="button--brown"> <a href="">Realizar una evaluación</a></div>
+        </section>
+      </div>
+      <div class="home__section">
         <section class="department-eval"> 
           <h4 class="department-eval__title">Evaluaciones del departamento</h4>
           <div class="department-eval__main"> <i class="material-icons">thumb_up </i>
@@ -54,8 +82,6 @@
           <div class="button--brown--eva"> <a href="">Realizar una evaluación</a></div>
           <div class="button--brown--info"><a href="">Más información </a></div>
         </section>
-      </div>
-      <div class="user__section">
         <section class="graphic"> 
           <div class="graphic__main"></div>
         </section>

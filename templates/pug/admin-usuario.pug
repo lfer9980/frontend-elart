@@ -1,0 +1,35 @@
+extend components/template.pug
+block css 
+
+block title
+	title elart | Crear Usuario
+block contents
+	include components/sidebar-admin.pug
+	main.crear-usuario
+		.form__agregar
+			h2 Agregar Usuario:
+			form(action="" method="POST")
+				label.form__label(for="correo")
+					span Ingrese su correo:
+					input.form__label(type="text" placeholder="Ingrese el correo" name="correo" required)
+				label.form__label(for="departamento")
+					span ingrese el departamento:
+					input.form__input(list ="departamentos" name = "departamento")
+					datalist(id="departamentos")
+						option(value="valor dummie")
+				button.button--brown(type="submit") Agregar usuario
+
+		.form__administrar 
+			form(action="" method="POST")
+				label.form__label(for="departamento")
+					span Seleccione el departamento:
+					input.form__input(list ="departamentos" name = "departamento")
+					datalist(id="departamentos")
+						option(value="valor dummie")
+				label.form__label(for="name")
+					span Seleccione al empleado:
+					input.form__input(list ="nombres" name = "nombre")
+					datalist(id="nombres")
+						option(value="valor dummie")
+				button.button--brown(type="submit") MODIFICAR usuario
+				button.button--brown(type="submit") ELIMINAR usuario

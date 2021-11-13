@@ -1,0 +1,18 @@
+extend components/template.pug
+block css 
+
+block title
+	title elart | home 
+block contents
+	include components/sidebar-team.pug
+	main.home
+		h1.home__tile OverView - l’partenaire
+		.home__section
+			include components/profile-team.pug
+		.home__section
+			include components/profile-points.pug
+		.home__section
+			include components/evaluations-department.pug
+			include components/graphics.pug
+
+block scripts	

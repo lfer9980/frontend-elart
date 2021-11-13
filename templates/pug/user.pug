@@ -4,5 +4,15 @@ block css
 block title
 	title elart | partenaire
 block contents
+	include components/sidebar-team.pug
+	main.user 
+		h1.user_title Perfil de usuario
+		.user__section 
+			include components/profile-user.pug
+			h1.user__subtitle Sus ultimas Evaluaciones:
+			include components/evaluations-department.pug
+		.user__section
+			include components/graphics.pug
+
 
 block scripts	

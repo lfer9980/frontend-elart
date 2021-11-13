@@ -15,7 +15,7 @@
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
     <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>elart | partenaire</title>
+    <title>elart | editar usuario</title>
   </head>
   <body> 
     <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
@@ -31,34 +31,18 @@
       </nav>
       <div class="button--brown"> <a href="">Cerrar sesión</a></div>
     </aside>
-    <main class="user"> 
-      <h1 class="user_title">Perfil de usuario</h1>
-      <div class="user__section"> 
-        <section class="profile-user"> 
-          <div class="profile-user__left"> <img class="profile__image" src="" alt="fotografia de usuario">
-            <div class="button--brown"><a href="">Modificar perfil</a></div>
-          </div>
-          <div class="profile-user__right"> 
-            <h3 class="profile-user__name">Joaquin Hernández</h3>
-            <p class="profile-user__description">Compras e insumos</p>
-            <p class="profile-user__estrellas"><span>4</span> estrellas</p>
-            <div class="profile-user__stars"> <i class="material-icons">stars </i><i class="material-icons">stars </i><i class="material-icons">stars </i><i class="material-icons">stars </i></div>
-          </div>
-        </section>
-        <h1 class="user__subtitle">Sus ultimas Evaluaciones:</h1>
-        <section class="department-eval"> 
-          <h4 class="department-eval__title">Evaluaciones del departamento</h4>
-          <div class="department-eval__main"> <i class="material-icons">thumb_up </i>
-            <p class="department-eval__main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="button--brown--eva"> <a href="">Realizar una evaluación</a></div>
-          <div class="button--brown--info"><a href="">Más información </a></div>
-        </section>
-      </div>
-      <div class="user__section">
-        <section class="graphic"> 
-          <div class="graphic__main"></div>
-        </section>
+    <main class="team-edit">
+      <h2>editar perfil</h2>
+      <div class="team-edit__form"><img class="team-edit__form__image" src="" alt="">
+        <form action="" method="post">
+          <label class="form__label" for="nombre"><span>Modificar nombre:</span>
+            <input class="form__input" type="text" placeholder="Escriba su nuevo nombre" name="nombre" required>
+          </label>
+          <label class="form__label" for="password"><span>Su nueva contraseña:</span>
+            <input class="form__input" type="text" placeholder="Escriba su nueva contraseña" name="password" required>
+          </label>
+          <button class="button--brown" type="submit">Guardar cambios</button>
+        </form>
       </div>
     </main>
   </body>

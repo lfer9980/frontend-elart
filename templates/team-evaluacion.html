@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Jesus Alan Hernandez Galvan (Unlikeghost)">
+    <meta name="autor" content="Luis Fernández (lfer9980)">
+    <meta name="autor" content="Leonel Valdez (leo1345)">
+    <meta name="description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
+    <meta property="og:title" content="Elart: evaluando el arte by Alfonso Marina">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="https://i.postimg.cc/dV37vjLh/logo-1-2x.png">
+    <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
+    <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>elart | formulario</title>
+  </head>
+  <body> 
+    <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
+      <p class="sidebar__username">Hola! Joaquín </p>
+      <nav class="sidebar__nav"> 
+        <ul class="sidebar__nav__data">
+          <li class="sidebar__item"><a href=""><i class="material-icons">accessibility</i> Vista General </a></li>
+          <li class="sidebar__item"> <a href=""><i class="material-icons">account_box</i> Modificar perfil</a></li>
+          <li class="sidebar__item"><a href=""><i class="material-icons">device_hub</i> Su departamento </a></li>
+          <li class="sidebar__item"><a href=""><i class="material-icons">assignment_turned_in</i> Sus evaluaciones</a></li>
+          <li class="sidebar__item"> <a href=""><i class="material-icons">settings</i> Editar su perfil</a></li>
+        </ul>
+      </nav>
+      <div class="button--brown"> <a href="">Cerrar sesión</a></div>
+    </aside>
+    <main class="team-evaluacion"></main>
+    <h2>crear una evaluación</h2>
+    <div class="team-evaluacion__form"> 
+      <form action="" method="POST">
+        <label class="form__label" for="departamento"><span>Departamento:</span>
+          <input class="form__input" list="departamentos" name="departamento">
+          <datalist id="departamentos">
+            <option value="valor dummie"></option>
+          </datalist>
+        </label>
+        <label class="form__label" for="empleado"><span>Empleado:</span>
+          <input class="form__input" list="usuarios" name="usuario">
+          <datalist id="usuarios">
+            <option value="valor dummie"></option>
+          </datalist>
+        </label>
+        <div class="form__rate__departament">
+          <p>Evaluación general al departamento del empleado:
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star5" name="estrellas_departamento" value="5">
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star4" name="estrellas_departamento" value="4">
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star3" name="estrellas_departamento" value="3">
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star2" name="estrellas_departamento" value="2">
+            <label for="star1" title="text">1 stars</label>
+            <input type="radio" id="star1" name="estrellas_departamento" value="1">
+          </p>
+        </div>
+        <div class="form__rate__empleado">
+          <p>Evaluación al desempeño del empleado:
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star5" name="estrellas_empleado" value="5">
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star4" name="estrellas_empleado" value="4">
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star3" name="estrellas_empleado" value="3">
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star2" name="estrellas_empleado" value="2">
+            <label for="star1" title="text">1 stars</label>
+            <input type="radio" id="star1" name="estrellas_empleado" value="1">
+          </p>
+        </div>
+        <label class="form__label" for="comentario">
+          <input type="textarea" placeholder="Agregue un breve comentario respecto al desempeño de su compañero, maximo 30 palabras..." name="comentario" required>
+        </label>
+        <button class="button--brown" type="submit">Enviar Evaluacion</button><form>
+      </form>
+    </div>
+  </body>
+</html>
