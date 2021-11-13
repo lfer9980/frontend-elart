@@ -9,14 +9,14 @@ block contents
 			h2 Agregar Departamento:
 			form(action="" method="POST")
 				label(class="form__label" for="departamento")
-					span Nombre:
+					span Nombre del departamento:
 					input.form__input(type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required)
 				button.button--brown(type="submit") Crear departamento
 		.form__editar
 				h2 Editar departamento:
 				form(action="" method="POST")
 				label(class="form__label" for="departamento")
-					span Nombre:
+					span Nombre del departamento:
 					input.form__input(list ="departamentos" name = "departamento")
 					datalist(id="departamentos")
 						option(value="valor dummie")
