@@ -13,15 +13,15 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="https://i.postimg.cc/dV37vjLh/logo-1-2x.png">
     <meta property="og:description" content="Proyecto de evaluaciones internas con AI para Alfonso Marina">
-    <link rel="icon" type="icono elart" href="../static/assets/img/logo-2@2x.png">
+    <link rel="icon" type="icono elart" href="../../static/assets/img/logo-2@2x.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="../static/css/base.css">
-    <link rel="stylesheet" href="../static/css/admin-reporte.css">
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/admin-usuario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>elart | generar reporte</title>
+    <title>elart | Crear Usuario</title>
   </head>
   <body> 
-    <aside class="sidebar"><img src="../static/assets/img/logo-1@2x.png" alt="Logo elarts">
+    <aside class="sidebar"><img src="../../static/assets/img/logo-1@2x.png" alt="Logo elarts">
       <p class="sidebar__username">Hola! Joaquín </p>
       <nav class="sidebar__nav"> 
         <ul class="sidebar__nav__data">
@@ -33,41 +33,40 @@
       </nav>
       <div class="button--brown"> <a href="/auth/admin/logout">Cerrar sesión</a></div>
     </aside>
-    <main class="reportes">
-      <h2 class="reportes__title">Imprimir Reporte:</h2>
-      <div class="form__reporte">
-        <form action="/auth/admin/reportes" method="POST" autocomplete="off">
+    <main class="crear-usuario">
+      <div class="form__agregar">
+        <h2>Agregar Usuario:</h2>
+        <form action="/api/v1/admin/crear/usuario" method="POST">
+          <label class="form__label" for="correo"><span>Ingrese su correo:</span>
+            <input class="form__label" type="text" placeholder="Ingrese el correo" name="correo" required>
+          </label>
+          <label class="form__label" for="departamento"><span>ingrese el departamento:</span>
+            <input class="form__input" list="departamentos" name="departamento">
+            <datalist id="departamentos">
+              <option value="valor dummie"></option>
+            </datalist>
+          </label>
+          <button class="button--brown" type="submit">Agregar usuario</button>
+        </form>
+      </div>
+      <div class="form__administrar"> 
+        <form action="/api/v1/admin/eliminar/usuario" method="POST" autocomplete="off">
           <label class="form__label" for="departamento"><span>Seleccione el departamento:</span>
             <input class="form__input" list="departamentos" name="departamento">
             <datalist id="departamentos">
               <option value="valor dummie"></option>
             </datalist>
           </label>
-          <button class="button--brown" type="submit">Generar reportes</button>
+          <label class="form__label" for="name"><span>Seleccione al empleado:</span>
+            <input class="form__input" list="nombres" name="nombre">
+            <datalist id="nombres">
+              <option value="valor dummie"></option>
+            </datalist>
+          </label>
+          <button class="button--brown" type="button" onclick="location.href = '/auth/admin/editar'" value="MODIFICAR usuario"> </button>
+          <button class="button--brown" type="submit">ELIMINAR usuario</button>
         </form>
       </div>
-      <section class="reportes__resultados">
-        <article class="reporte__resultados__card"> 
-          <div class="profile-main__foto"><img src="" alt=""></div>
-          <div class="profile-main__data">
-            <h3>Joaquin Hernández </h3><span>Compras e insumos</span>
-            <div class="profile-main__data__estrellas"><i class="material-icons">stars</i>
-              <p><span>4</span><span>estrellas </span></p>
-            </div>
-          </div>
-          <div class="profile-main__grafico"> </div>
-        </article>
-        <article class="reporte__resultados__card"> 
-          <div class="profile-main__foto"><img src="" alt=""></div>
-          <div class="profile-main__data">
-            <h3>Joaquin Hernández </h3><span>Compras e insumos</span>
-            <div class="profile-main__data__estrellas"><i class="material-icons">stars</i>
-              <p><span>4</span><span>estrellas </span></p>
-            </div>
-          </div>
-          <div class="profile-main__grafico"> </div>
-        </article>
-      </section>
     </main>
   </body>
 </html>
