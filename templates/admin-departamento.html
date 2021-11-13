@@ -25,18 +25,18 @@
       <p class="sidebar__username">Hola! Joaquín </p>
       <nav class="sidebar__nav"> 
         <ul class="sidebar__nav__data">
-          <li class="sidebar__item"><a href=""><i class="material-icons">accessibility</i> Vista General </a></li>
-          <li class="sidebar__item"><a href=""><i class="material-icons">device_hub</i> Reportes</a></li>
-          <li class="sidebar__nav__data"> <a href=""><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
-          <li class="sidebar__item"> <a href=""><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
+          <li class="sidebar__item"><a href="/auth/admin/home"><i class="material-icons">accessibility</i> Vista General </a></li>
+          <li class="sidebar__item"><a href="/auth/admin/reportes"><i class="material-icons">device_hub</i> Reportes</a></li>
+          <li class="sidebar__nav__data"> <a href="/auth/admin/usuarios"><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
+          <li class="sidebar__item"> <a href="/auth/admin/departamentos"><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
         </ul>
       </nav>
-      <div class="button--brown"> <a href="">Cerrar sesión</a></div>
+      <div class="button--brown"> <a href="/auth/admin/logout">Cerrar sesión</a></div>
     </aside>
     <main class="form">
       <div class="form__agregar">
         <h2>Agregar Departamento:</h2>
-        <form action="" method="POST">
+        <form action="/api/v1/admin/crear/departamento" method="POST" autocomplete="off">
           <label class="form__label" for="departamento"><span>Nombre del departamento:</span>
             <input class="form__input" type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required>
           </label>
@@ -45,14 +45,14 @@
       </div>
       <div class="form__editar">
         <h2>Editar departamento:</h2>
-        <form action="" method="POST">
+        <form action="/api/v1/admin/eliminar/departamento" method="POST" autocomplete="off">
           <label class="form__label" for="departamento"><span>Nombre del departamento:</span>
             <input class="form__input" list="departamentos" name="departamento">
             <datalist id="departamentos">
               <option value="valor dummie"></option>
             </datalist>
           </label>
-          <button class="button--brown" type="submit">Crear departamento</button>
+          <button class="button--brown" type="submit">ELIMINAR departamento</button>
         </form>
       </div>
     </main>

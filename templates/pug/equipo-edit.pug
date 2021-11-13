@@ -10,7 +10,7 @@ block contents
 		h2 editar perfil
 		.team-edit__form
 			img.team-edit__form__image(src="", alt="")
-			form(action="/api/v1/equipo/editar" method="post")
+			form(action="/api/v1/equipo/editar" method="POST" autocomplete = "off")
 				label.form__label(for="nombre")
 					span Modificar nombre:
 					input.form__input(type="text" placeholder="Escriba su nuevo nombre" name="nombre" required)

@@ -26,7 +26,7 @@
         <p>Te damos la bienvenida a <span>e-lart.</span></p>
         <p>El lugar donde evaluamos tu desempeño de forma efectiva.</p>
       </div>
-      <form class="login__form" action="" method="POST"> 
+      <form class="login__form" action="" method="POST" autocomplete="off"> 
         <label class="form__label" for="usuario">
           <input class="form__input" type="text" placeholder="Usuario" name="usuario" required>
         </label>
@@ -36,8 +36,8 @@
         <button class="button--brown" type="submit">Ingresar</button>
       </form>
       <div class="login__separator"></div>
-      <form class="login__form__administrador" action="" method="POST">
-        <input class="button--brown" type="button" onclick = "location.href = '/registro'" value="Registrar una cuenta" />
+      <form class="login__form__administrador" action="" method="POST" autocomplete="off">
+        <button class="button--brown" type="button" onclick="location.href = '/registro'" value="Registrar una cuenta"></button>
       </form><img src="" alt="Logo de Alfonso Marina">
     </main>
   </body>

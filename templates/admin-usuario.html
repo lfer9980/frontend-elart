@@ -25,18 +25,18 @@
       <p class="sidebar__username">Hola! Joaquín </p>
       <nav class="sidebar__nav"> 
         <ul class="sidebar__nav__data">
-          <li class="sidebar__item"><a href=""><i class="material-icons">accessibility</i> Vista General </a></li>
-          <li class="sidebar__item"><a href=""><i class="material-icons">device_hub</i> Reportes</a></li>
-          <li class="sidebar__nav__data"> <a href=""><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
-          <li class="sidebar__item"> <a href=""><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
+          <li class="sidebar__item"><a href="/auth/admin/home"><i class="material-icons">accessibility</i> Vista General </a></li>
+          <li class="sidebar__item"><a href="/auth/admin/reportes"><i class="material-icons">device_hub</i> Reportes</a></li>
+          <li class="sidebar__nav__data"> <a href="/auth/admin/usuarios"><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
+          <li class="sidebar__item"> <a href="/auth/admin/departamentos"><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
         </ul>
       </nav>
-      <div class="button--brown"> <a href="">Cerrar sesión</a></div>
+      <div class="button--brown"> <a href="/auth/admin/logout">Cerrar sesión</a></div>
     </aside>
     <main class="crear-usuario">
       <div class="form__agregar">
         <h2>Agregar Usuario:</h2>
-        <form action="" method="POST">
+        <form action="/api/v1/admin/crear/usuario" method="POST">
           <label class="form__label" for="correo"><span>Ingrese su correo:</span>
             <input class="form__label" type="text" placeholder="Ingrese el correo" name="correo" required>
           </label>
@@ -50,7 +50,7 @@
         </form>
       </div>
       <div class="form__administrar"> 
-        <form action="" method="POST">
+        <form action="/api/v1/admin/eliminar/usuario" method="POST" autocomplete="off">
           <label class="form__label" for="departamento"><span>Seleccione el departamento:</span>
             <input class="form__input" list="departamentos" name="departamento">
             <datalist id="departamentos">
@@ -63,7 +63,7 @@
               <option value="valor dummie"></option>
             </datalist>
           </label>
-          <button class="button--brown" type="submit">MODIFICAR usuario</button>
+          <button class="button--brown" type="button" onclick="location.href = '/auth/admin/editar'" value="MODIFICAR usuario"> </button>
           <button class="button--brown" type="submit">ELIMINAR usuario</button>
         </form>
       </div>

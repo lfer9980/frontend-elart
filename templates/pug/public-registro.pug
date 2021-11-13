@@ -8,13 +8,13 @@ block contents
     main.registro
         img(src="", alt="Logo de elart") 
         h4 Agregar administrador
-        form.login__form(action="" method="POST") 
+        form.login__form(action="/api/v1/registroadmin" method="POST" autocomplete="off") 
             label.form__label(for="nombre")
                 span Nombre:
                 input.form__input(type="text" placeholder="ingrese su nombre" name="nombre" required)
             label.form__label(for="correo")
                 span Correo electronico:
-                input.form__input(type="text" placeholder="ingrese un correo electronico" name="correo" required)
+                input.form__input(type="text" placeholder="ingrese un correo electronico" name="email" required)
             label.form__label(for="contraseña")
                 span Contraseña:
                 input.form__input(type="password" placeholder="Ingrese una contraseña" name="password" required)

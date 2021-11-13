@@ -9,14 +9,14 @@ block contents
 	main.form
 		.form__agregar
 			h2 Agregar Departamento:
-			form(action="/api/v1/admin/crear/departamento" method="POST")
+			form(action="/api/v1/admin/crear/departamento" method="POST" autocomplete = "off")
 				label(class="form__label" for="departamento")
 					span Nombre del departamento:
 					input.form__input(type="text" placeholder="Ingrese el nombre del departamento" name="departamento" required)
 				button.button--brown(type="submit") Crear departamento
 		.form__editar
 			h2 Editar departamento:
-			form(action="/api/v1/admin/eliminar/departamento" method="POST")
+			form(action="/api/v1/admin/eliminar/departamento" method="POST" autocomplete = "off")
 				label(class="form__label" for="departamento")
 					span Nombre del departamento:
 					input.form__input(list ="departamentos" name = "departamento")

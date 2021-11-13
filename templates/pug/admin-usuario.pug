@@ -21,7 +21,7 @@ block contents
 				button.button--brown(type="submit") Agregar usuario
 
 		.form__administrar 
-			form(action="/api/v1/admin/eliminar/usuario" method="POST")
+			form(action="/api/v1/admin/eliminar/usuario" method="POST" autocomplete = "off")
 				label.form__label(for="departamento")
 					span Seleccione el departamento:
 					input.form__input(list ="departamentos" name = "departamento")

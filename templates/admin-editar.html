@@ -25,18 +25,18 @@
       <p class="sidebar__username">Hola! Joaquín </p>
       <nav class="sidebar__nav"> 
         <ul class="sidebar__nav__data">
-          <li class="sidebar__item"><a href=""><i class="material-icons">accessibility</i> Vista General </a></li>
-          <li class="sidebar__item"><a href=""><i class="material-icons">device_hub</i> Reportes</a></li>
-          <li class="sidebar__nav__data"> <a href=""><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
-          <li class="sidebar__item"> <a href=""><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
+          <li class="sidebar__item"><a href="/auth/admin/home"><i class="material-icons">accessibility</i> Vista General </a></li>
+          <li class="sidebar__item"><a href="/auth/admin/reportes"><i class="material-icons">device_hub</i> Reportes</a></li>
+          <li class="sidebar__nav__data"> <a href="/auth/admin/usuarios"><i class="material-icons">assignment_turned_in</i> Editar usuarios 			</a></li>
+          <li class="sidebar__item"> <a href="/auth/admin/departamentos"><i class="material-icons">remove_red_eye</i>Ver departamentos</a></li>
         </ul>
       </nav>
-      <div class="button--brown"> <a href="">Cerrar sesión</a></div>
+      <div class="button--brown"> <a href="/auth/admin/logout">Cerrar sesión</a></div>
     </aside>
     <main class="form">
       <h2 class="form__title">Editar perfil</h2>
       <div class="form__perfil">
-        <form action="" method="POST">
+        <form action="/api/v1/admin/editar/usuario" method="POST" autocomplete="off">
           <label class="form__label" for="nombre"><span>Nombre:</span>
             <input class="form__input" type="text" placeholder="Escriba tu nombre" name="nombre" required>
           </label>
