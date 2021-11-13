@@ -1,0 +1,26 @@
+extend components/template.pug
+block css 
+block title
+	title elart | generar reporte
+block contents
+	block scripts	
+	block contents 
+		<form action="" method="post">
+		<label class="label__ela" for="uname"><b>Imprimir Reporte: </b></label>
+		<label class="label__ela" for="uname"><b>Seleccione Departamento: </b></lab>
+		<select class="select__ela" name="Departamento">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<label class="label__ela" for="uname"><b>Seleccione Empleado: </b></lab>
+		<select class="select__ela" name="Empleado">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<button class="buton__ela" type="submit">Guardar</button>
