@@ -1,0 +1,14 @@
+extend components/template.pug
+block css 
+block title
+    title elart | Registro de administrador
+block contents
+    <form action="" method="post">
+    <label class="label__ela" for="uname"><b>Agregar administrador: </b></label>
+    <label class="label__ela" for="uname"><b>Nombre </b></label>
+    <input class="input__ela" type="text" placeholder="" name="nombre" required>
+    <label class="label__ela" for="uname"><b>Correo </b></label>
+    <input class="input__ela" type="text" placeholder="Correo" name="email" required>
+    <label class="label__ela" for="uname"><b>Contraseña: </b></label>
+    <input class="input__ela" type="text" placeholder="Contraseña" name="password" required>
+    <button class="buton_ela" type="submit">Guardar</button>

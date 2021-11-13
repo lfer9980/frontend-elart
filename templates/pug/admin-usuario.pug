@@ -2,14 +2,10 @@ extend components/template.pug
 block css 
 
 block title
-	title elart | add user
-block contents
-
-block scripts	
-
+	title elart | Crear Usuario
 block contents
 	<form action="" method="post">
-		<label class="label__ela" for="uname"><b>Agragar Ususario: </b></label>
+		<label class="label__ela" for="uname"><b>Agregar Ususario: </b></label>
 		<label class="label__ela" for="uname"><b>Nombre: </b></label>
 		<input class="input__ela" type="text" placeholder="Nombre" name="Nombre" required>
 		<label class="label__ela" for="uname"><b>Correo: </b></label>
@@ -23,5 +19,18 @@ block contents
 		</select>
 		<button class="buton__ela" type="submit">Guardar</button>
 	</form>
-				
-				
+
+		<form action="" method="post">
+		<label class="label__ela" for="uname"><b>Agregar usuario: </b></label>
+
+		<label class="label__ela" for="uname"><b>Correo: </b></label>
+		<input class="input__ela" type="text" placeholder="Correo" name="comentarios" required></b></label>
+
+		<label class="label__ela" for="uname"><b>Seleccione Departamento: </b></lab>
+		<select class="select__ela" name="Departamento">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
