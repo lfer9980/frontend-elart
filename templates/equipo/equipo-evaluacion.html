@@ -34,55 +34,57 @@
       </nav>
       <div class="button--brown"> <a href="/auth/equipo/logout">Cerrar sesión</a></div>
     </aside>
-    <main class="team-evaluacion"></main>
-    <h2>crear una evaluación</h2>
-    <div class="team-evaluacion__form"> 
-      <form action="/api/v1/equipo/evaluacion" method="POST" autocomplete="off">
-        <label class="form__label" for="departamento"><span>Departamento:</span>
-          <input class="form__input" list="departamentos" name="departamento">
-          <datalist id="departamentos">
-            <option value="valor dummie"></option>
-          </datalist>
-        </label>
-        <label class="form__label" for="empleado"><span>Empleado:</span>
-          <input class="form__input" list="usuarios" name="usuario">
-          <datalist id="usuarios">
-            <option value="valor dummie"></option>
-          </datalist>
-        </label>
-        <div class="form__rate__departament">
-          <p>Evaluación general al departamento del empleado:
-            <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star5" name="estrellas_departamento" value="5">
-            <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star4" name="estrellas_departamento" value="4">
-            <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star3" name="estrellas_departamento" value="3">
-            <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star2" name="estrellas_departamento" value="2">
-            <label for="star1" title="text">1 stars</label>
-            <input type="radio" id="star1" name="estrellas_departamento" value="1">
-          </p>
-        </div>
-        <div class="form__rate__empleado">
-          <p>Evaluación al desempeño del empleado:
-            <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star5" name="estrellas_empleado" value="5">
-            <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star4" name="estrellas_empleado" value="4">
-            <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star3" name="estrellas_empleado" value="3">
-            <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star2" name="estrellas_empleado" value="2">
-            <label for="star1" title="text">1 stars</label>
-            <input type="radio" id="star1" name="estrellas_empleado" value="1">
-          </p>
-        </div>
-        <label class="form__label" for="comentario">
-          <input type="textarea" placeholder="Agregue un breve comentario respecto al desempeño de su compañero, maximo 30 palabras..." name="comentario" required>
-        </label>
-        <button class="button--brown" type="submit">Enviar Evaluacion</button><form>
-      </form>
-    </div>
+    <main class="team-evaluacion">
+      <h2>crear una evaluación</h2>
+      <div class="team-evaluacion__form"> 
+        <form action="/api/v1/equipo/evaluacion" method="POST" autocomplete="off">
+          <label class="form__label" for="departamento"><span>Departamento:</span>
+            <input class="form__input" list="departamentos" name="departamento">
+            <datalist id="departamentos">
+              <option value="valor dummie"></option>
+            </datalist>
+          </label>
+          <label class="form__label" for="empleado"><span>Empleado:</span>
+            <input class="form__input" list="usuarios" name="usuario">
+            <datalist id="usuarios">
+              <option value="valor dummie"></option>
+            </datalist>
+          </label>
+          <div class="form__rate__departament">
+            <p>Evaluación general al departamento del empleado:
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star5" name="estrellas_departamento" value="5">
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star4" name="estrellas_departamento" value="4">
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star3" name="estrellas_departamento" value="3">
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star2" name="estrellas_departamento" value="2">
+              <label for="star1" title="text">1 stars</label>
+              <input type="radio" id="star1" name="estrellas_departamento" value="1">
+            </p>
+          </div>
+          <div class="form__rate__empleado">
+            <p>Evaluación al desempeño del empleado:
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star5" name="estrellas_empleado" value="5">
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star4" name="estrellas_empleado" value="4">
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star3" name="estrellas_empleado" value="3">
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star2" name="estrellas_empleado" value="2">
+              <label for="star1" title="text">1 stars</label>
+              <input type="radio" id="star1" name="estrellas_empleado" value="1">
+            </p>
+          </div>
+          <label class="form__label" for="comentario">
+            <input type="textarea" placeholder="Agregue un breve comentario respecto al desempeño de su compañero, maximo 30 palabras..." name="comentario" required>
+          </label>
+          <button class="button--brown" type="submit">Enviar Evaluacion</button><form>
+        </form>
+      </div>
+    </main>
+   
   </body>
 </html>
