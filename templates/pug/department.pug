@@ -5,10 +5,16 @@ block css
 block title
 	title elart | department
 block contents
+	include components/sidebar.pug
 	main.department
-		include components/sidebar.pug
-		include components/profile-main.pug
-		include components/profile-points.pug
-		include components/evaluations-department.pug
-		include components/graphics.pug
+		h1.department__title Departamento
+		.department__section
+			include components/team-overview.pug
+		.department__section
+			include components/graphics.pug
+			include components/evaluations-department.pug
+		.department__section 
+			include components/sentimiento.pug
+
+
 block scripts	
