@@ -10,7 +10,7 @@ block contents
 	main.team-evaluacion
 	h2 crear una evaluación
 	.team-evaluacion__form 
-		form(action="" method="POST")
+		form(action="/api/v1/equipo/evaluacion" method="POST")
 			label.form__label(for="departamento")
 				span Departamento:
 				input.form__input(list="departamentos" name="departamento")

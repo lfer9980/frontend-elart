@@ -9,7 +9,7 @@ block contents
 	main.reportes
 		h2.reportes__title Imprimir Reporte:
 		.form__reporte
-			form(action="" method="POST")
+			form(action="/auth/admin/reportes" method="POST")
 				label.form__label(for="departamento")
 					span Seleccione el departamento:
 					input.form__input(list="departamentos" name="departamento")

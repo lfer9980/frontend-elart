@@ -14,10 +14,10 @@ block contents
 			label.form__label(for="usuario")
 				input.form__input(type="text" placeholder="Usuario" name="usuario" required)
 			label.form__label(for="contraseña")
-				input.form__input(type="text" placeholder="Contraseña" name="password" required)
+				input.form__input(type="password" placeholder="Contraseña" name="password" required)
 			button.button--brown(type="submit") Ingresar
 		.login__separator
 		form.login__form__administrador(action="" method="POST")
-			button.button--brown(type="submit") Registrar una cuenta
+			button.button--brown(type="button"  onclick = "location.href = '/registro'" value="Registrar una cuenta" )
 		img(src="", alt="Logo de Alfonso Marina")
 block scripts	
